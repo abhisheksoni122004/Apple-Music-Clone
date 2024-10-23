@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.header {
+    padding: 5px 0;
+    background-color: #333;
+    z-index: 100;
+    position: relative;
+    text-align: center;
+    height: 45px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Apple_logo_white.svg/1200px-Apple_logo_white.svg.png);
+    background-size: 15px 19px; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#main{
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    padding: 100px;
+    background-image: url('images/music-icon.png');
+    background-repeat: no-repeat;
+    background-size: 73px,38px;
+    background-position: top;
+    margin-top: 60px;
+    text-align: center;
+    direction: ltr;
+    word-spacing: -5px;
+}
+
+/* Offer text */
+.offer-text {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin-top: -90px; /* Reduce space above by setting a negative margin */
+    margin-bottom: 20px;
+    padding: 10px; /* Adjusted padding to create less space inside */
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Centering the curve box */
+.curve-box {
+    background-color: #ff0022;
+    color: white;  
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0 auto; /* Centers the box horizontally */
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  
+    text-align: center;
+    position: relative;
+    left: 50%; /* Move the element 50% from the left */
+    transform: translateX(-50%); /* Adjust the position to keep it centered */
+
+
+    /* background-image: linear-gradient(to top red,yellow); */
+
+    /* animation-name: move;
+    animation-duration: 7s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;  */
+
+}
+.down-offer {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px; /* Add space between music image and down-offer text */
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Music image centering */
+.music-image {
+    margin: 50px auto; /* Space above the image */
+    width: 980px; 
+    height: 551px;
+    display: block;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+/* Ensuring responsiveness */
+@media (max-width: 1200px) {
+    .music-image {
+        width: 90%;
+        height: auto; /* Keep aspect ratio */
+    }
+
+    .offer-text {
+        font-size: 24px;
+    }
+
+    .curve-box {
+        font-size: 18px;
+        padding: 8px 15px;
+    }
+}
+/* animation */
+@keyframes move {
+    0%{
+        left: 0;
+        background-color: rgb(244, 0, 0);
+        top: 0;
+        /* rotate: 0deg; */
+    }
+    50%{
+        left: 40%;
+        background-color: saddlebrown;
+        top: 0;
+        /* rotate: 360deg; */
+    }
+    100%{
+        left:3%;
+        background-color: green;
+        top: 50%;
+        /* rotate: 360deg; */
+    } 
+}
+
